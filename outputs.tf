@@ -1,7 +1,7 @@
 output "instance_ami" {
-  value = aws_instance.blog.ami
+  value = module.autoscaling.image_id
 }
 
 output "instance_arn" {
-  value = aws_instance.blog.arn
+  value = module.blog_alb.target_group_arns
 }
