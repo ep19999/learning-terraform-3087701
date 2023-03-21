@@ -1,5 +1,5 @@
 output "instance_ami" {
-  value = module.autoscaling.image_id
+  value = data.aws_ami.app_ami.id
 }
 
 output "instance_arn" {
